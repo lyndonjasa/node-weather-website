@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body>
+        {{>header}}
+
+        <div>
+            Use this site to get your weather
+
+            <form>
+                <input id="txtLocation" type="text" />
+                <button id="btnSearch">Search</button>
+            </form>
+
+            <div id="results">
+                
+            </div>
+        </div>
+
+        {{>footer}}
+    </body>
+
+    
+    <script src="./js/app.js"></script>
+</html>
