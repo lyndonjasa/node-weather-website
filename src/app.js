@@ -12,6 +12,7 @@ const viewPath = path.join(__dirname, '../templates/views');
 const partialPath = path.join(__dirname, '../templates/partials');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // setup handlebars 
 app.set('views', viewPath);
@@ -60,6 +61,6 @@ app.get('*', (req, res) => {
     res.send('<h1>404 Page</h1>');
 });
 
-app.listen(3000, () => {
-    console.log('server up on port 3000');
+app.listen(port, () => {
+    console.log('server up on port ' + port);
 });
