@@ -26,7 +26,7 @@ form.addEventListener('submit', (e) => {
 
 getWeatherForecast = (location, callback) => {
     // gets the response from the url
-    fetch('http://localhost:3000/weather?location=' + location).then((response) => {
+    fetch('/weather?location=' + location).then((response) => {
         // parses the response as json object
         response.json().then((data) => {
             if (data.error) {
